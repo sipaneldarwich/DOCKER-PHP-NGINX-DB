@@ -54,6 +54,7 @@
 * overwrite symfony main page
   * create controller and name it `indexController`
     * `bin/console make:controller`
+    * set route to '/'
     * open templates base.html.twig
       * include this for css in Header
         ```twig
@@ -70,4 +71,9 @@
 * start npm
   * `npm install`
   * `npm run watch`
-  * if npm run dev fails : https://stackoverflow.com/questions/77684268/bootstrap-cannot-find-symfony-stimulus-bundle
+  * if npm run watch fails : 
+    * https://stackoverflow.com/questions/77684268/bootstrap-cannot-find-symfony-stimulus-bundle
+    * `composer remove symfony/ux-turbo symfony/asset-mapper symfony/stimulus-bundle`
+    * `composer require symfony/webpack-encore-bundle symfony/ux-turbo symfony/stimulus-bundle`
+    * `npm install`
+    * `npm run watch`
