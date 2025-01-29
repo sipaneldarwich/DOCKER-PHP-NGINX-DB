@@ -1,4 +1,8 @@
 # Containers
+> 👍 info
+>
+> change docker-compose.yml name to your project name
+
   * php + nginx + adminer + mysql
   * nginx: localhost:80
     * nginx is looking for **../app/public/index.php**

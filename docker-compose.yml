@@ -1,4 +1,4 @@
-name: translationApp-Symfony
+name: app
 services:
   nginx:
     container_name: nginx
